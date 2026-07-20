@@ -1,0 +1,13 @@
+# Environment / secrets
+.env
+
+# Local logs
+log.txt
+chatlog.txt
+
+# Private (non-public) bot file
+chat.py
+
+# Python
+__pycache__/
+*.pyc
