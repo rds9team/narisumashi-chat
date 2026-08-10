@@ -21,7 +21,7 @@ LANG = os.environ.get("LANG", "ja").lower()
 
 MESSAGES = {
     "ja": {
-        "ready": "チャット偽装Bot 起動完了",
+        "ready": "なりすましBot 起動完了",
         "synced": "スラッシュコマンドを {n} 個同期しました",
         "sync_error": "コマンドの同期に失敗しました: {e}",
         "processing": "送信中...",
