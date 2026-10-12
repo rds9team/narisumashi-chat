@@ -1,9 +1,11 @@
 # Environment / secrets
 .env
 
-# Local logs
+# Local logs & database
 log.txt
 chatlog.txt
+*.db
+*.db-journal
 
 # Private (non-public) bot file
 chat.py
