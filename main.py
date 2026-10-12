@@ -151,7 +151,7 @@ class ImpersonationBot(commands.Bot):
             latency = round(self.latency * 1000, 1) if self.latency else 0.0
             return web.json_response({
                 "status": "online",
-                "bot_name": self.user.name if self.user else "Unknown",
+                "bot_name": "なりすましchat",
                 "bot_id": str(self.user.id) if self.user else "",
                 "guilds": guild_count,
                 "users": user_count,
