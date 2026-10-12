@@ -324,13 +324,13 @@ async def chat_cmd(interaction: discord.Interaction, user: discord.User, message
 # ==========================================
 # /setting コマンドグループ
 # ==========================================
+@app_commands.default_permissions(manage_guild=True)
+@app_commands.guild_only()
 class SettingGroup(app_commands.Group):
     def __init__(self):
         super().__init__(
             name="setting",
             description="サーバーごとのなりすましBot設定（管理者専用）",
-            default_member_permissions=discord.Permissions(manage_guild=True),
-            guild_only=True,
         )
 
     @app_commands.command(name="webhook", description="誰がなりすましを実行したかのログ受信用 Webhook URL を設定します")
